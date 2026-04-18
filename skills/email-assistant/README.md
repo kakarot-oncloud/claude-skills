@@ -14,8 +14,20 @@ Most people spend 30+ minutes a day on email. This skill cuts that to 5. Give it
 - When you have one minute and need a good draft
 
 ## How to install
-1. Copy the contents of `system_prompt.md`
-2. Paste into a Claude Project's custom instructions, or use as a one-off system prompt
+
+  This skill follows Claude's official **Agent Skills** format.
+
+  **Option A — Upload to Claude.ai (Pro/Team/Enterprise):**
+  1. Download [`SKILL.md`](./SKILL.md) (or grab the prebuilt zip from `dist/` in the repo root)
+  2. In Claude.ai → **Settings → Capabilities → Skills → Upload skill**
+  3. Select the file or folder. Done — Claude will use it automatically when relevant.
+
+  **Option B — Claude Code:**
+  Copy this folder into `~/.claude/skills/` (global) or your project's `.claude/skills/` directory.
+
+  **Option C — Free-tier fallback:**
+  Open `SKILL.md`, copy everything **after** the `---` frontmatter block, paste at the top of a new Claude conversation, then add your request below.
+
 
 ## Example
 

@@ -2,12 +2,12 @@
 
 # 🧠 Claude Skills
 
-### A curated collection of 10 high-quality, daily-use Claude skills you can drop straight into Claude.ai or the API.
+### 10 high-quality, daily-use Claude Skills in the official `SKILL.md` format — download and upload directly to Claude.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Skills: 10](https://img.shields.io/badge/Skills-10-blueviolet)](#-the-skills)
-[![Made for Claude](https://img.shields.io/badge/Made%20for-Claude-orange)](https://claude.ai)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
+[![Format: Claude Skills](https://img.shields.io/badge/Format-Claude%20Skills-orange)](https://docs.claude.com/en/docs/agents-and-tools/agent-skills)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 *Practical. Battle-tested. No filler.*
 
@@ -17,118 +17,127 @@
 
 ## 🌟 What is this?
 
-A hand-picked collection of **10 ready-to-use Claude skills** (system prompts) that solve real, daily problems — from writing better emails and summarizing long articles to compressing prompts so free-tier users can do more with each message.
+A curated collection of **10 ready-to-upload Claude Skills** that solve real, daily problems — from compressing prompts for free-tier users, to writing better emails, summarizing long articles, and tailoring resumes.
 
-Each skill is:
-
-- ✅ **Drop-in ready** — copy the system prompt, paste into a Claude Project, done
-- ✅ **Daily-use focused** — every skill solves a problem people face every day
-- ✅ **Documented** — each skill has its own README with examples and tips
-- ✅ **No fluff** — no overlapping skills, no novelty toys
+Every skill follows **Claude's official Agent Skills format**: a `SKILL.md` file with YAML frontmatter (`name`, `description`) and the skill's instructions. Drop the folder (or zip) into Claude.ai or pass it to the Claude API/Claude Code, and Claude will autonomously use the skill when relevant.
 
 ---
 
 ## 📚 The Skills
 
-| # | Skill | What it does |
-|---|-------|--------------|
-| 1 | [💰 **Token Saver**](./skills/token-saver/) | Compresses prompts/text into tiny token footprints — built for **free-tier users** |
-| 2 | [✉️ **Email Assistant**](./skills/email-assistant/) | Writes daily emails, replies, follow-ups, and polite declines |
-| 3 | [📝 **Meeting Notes → Actions**](./skills/meeting-notes-to-actions/) | Messy notes → decisions, action items (owner + deadline), open questions |
-| 4 | [📄 **Resume Tailor**](./skills/resume-tailor/) | Rewrites your resume for a specific job — without inventing experience |
-| 5 | [🎓 **Study Buddy**](./skills/study-buddy/) | Tutors any topic with analogies, flashcards, and quizzes |
-| 6 | [💻 **Code Explainer**](./skills/code-explainer/) | Explains, debugs, and improves code in plain English |
-| 7 | [🔁 **Content Repurposer**](./skills/content-repurposer/) | One piece of content → tweet thread, LinkedIn, blog, newsletter, video script |
-| 8 | [⚖️ **Decision Helper**](./skills/decision-helper/) | Weighted pros/cons + a real recommendation for any decision |
-| 9 | [📚 **Smart Summarizer**](./skills/smart-summarizer/) | Tiered summaries: TL;DR → key points → full breakdown → quotes |
-| 10 | [✨ **Prompt Improver**](./skills/prompt-improver/) | Turns vague prompts into structured prompts that work |
+| # | Skill | What it does | Download |
+|---|-------|--------------|----------|
+| 1 | [💰 **token-saver**](./skills/token-saver/) | Compresses prompts/text into tiny token footprints — built for **free-tier users** | [📦 zip](./dist/token-saver.zip) |
+| 2 | [✉️ **email-assistant**](./skills/email-assistant/) | Writes daily emails, replies, follow-ups, polite declines | [📦 zip](./dist/email-assistant.zip) |
+| 3 | [📝 **meeting-notes-to-actions**](./skills/meeting-notes-to-actions/) | Messy notes → decisions, action items, owners, deadlines | [📦 zip](./dist/meeting-notes-to-actions.zip) |
+| 4 | [📄 **resume-tailor**](./skills/resume-tailor/) | Rewrites resume to match a job — without inventing experience | [📦 zip](./dist/resume-tailor.zip) |
+| 5 | [🎓 **study-buddy**](./skills/study-buddy/) | Tutors any topic with analogies, flashcards, and quizzes | [📦 zip](./dist/study-buddy.zip) |
+| 6 | [💻 **code-explainer**](./skills/code-explainer/) | Explains, debugs, and improves code in plain English | [📦 zip](./dist/code-explainer.zip) |
+| 7 | [🔁 **content-repurposer**](./skills/content-repurposer/) | One source → tweet, LinkedIn, blog, newsletter, video script | [📦 zip](./dist/content-repurposer.zip) |
+| 8 | [⚖️ **decision-helper**](./skills/decision-helper/) | Weighted pros/cons + a real recommendation for any decision | [📦 zip](./dist/decision-helper.zip) |
+| 9 | [📚 **smart-summarizer**](./skills/smart-summarizer/) | Tiered summaries: TL;DR / key points / full / quotes | [📦 zip](./dist/smart-summarizer.zip) |
+| 10 | [✨ **prompt-improver**](./skills/prompt-improver/) | Turns vague prompts into structured prompts that work | [📦 zip](./dist/prompt-improver.zip) |
+
+**👉 [Download all 10 as a single bundle (`all-skills.zip`)](./dist/all-skills.zip)**
 
 ---
 
 ## 🚀 How to use these skills
 
-You have **three good options**, depending on how much you'll use the skill.
+These skills follow Claude's official **Agent Skills** format. There are several ways to use them, depending on your setup.
 
-### Option 1 — Claude Projects (recommended for skills you'll reuse)
+### ✅ Option 1 — Upload to Claude.ai (Pro / Team / Enterprise)
 
-1. Open [Claude.ai](https://claude.ai) → **Projects** → **New Project**
-2. Open the skill folder you want (e.g. [`skills/email-assistant/`](./skills/email-assistant/))
-3. Open `system_prompt.md` → copy everything
-4. Paste into **Project instructions** → save
-5. Open a new chat in that project — the skill is now active
+1. **Get the skill** — either:
+   - Download the individual `.zip` from the table above, **or**
+   - Download all skills via the bundle: [`dist/all-skills.zip`](./dist/all-skills.zip)
+2. In Claude.ai, open **Settings → Capabilities → Skills**
+3. Click **Upload skill** and select the `.zip` file (or the unzipped folder)
+4. Claude will now use the skill automatically when your message matches its description
 
-### Option 2 — One-off conversations
+> If you're on Claude **Free**, skill upload may not be available — use Option 4 instead.
 
-1. Open the skill's `system_prompt.md`
-2. Copy it
-3. Paste at the top of a new Claude conversation
-4. Add your actual request below it
+### ✅ Option 2 — Use with Claude Code
 
-### Option 3 — API / Custom apps
+1. Clone this repo or download the skill folder you want
+2. Place it in your project's `.claude/skills/` directory (or globally in `~/.claude/skills/`)
+3. Run Claude Code in that project — the skills are auto-loaded
 
-1. Use the contents of `system_prompt.md` as the `system` parameter in your Anthropic API call
-2. Pass the user's request as the user message
-
-```python
-import anthropic
-
-with open("skills/email-assistant/system_prompt.md") as f:
-    system_prompt = f.read()
-
-client = anthropic.Anthropic()
-message = client.messages.create(
-    model="claude-sonnet-4-5",
-    max_tokens=1024,
-    system=system_prompt,
-    messages=[{"role": "user", "content": "Reply to my boss about being sick tomorrow"}]
-)
-print(message.content[0].text)
+```bash
+git clone https://github.com/kakarot-oncloud/claude-skills.git
+mkdir -p ~/.claude/skills
+cp -r claude-skills/skills/* ~/.claude/skills/
 ```
+
+### ✅ Option 3 — Use with the Claude API
+
+Pass the skill folder when configuring your agent. See [Anthropic's Agent Skills docs](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) for the latest API specifics.
+
+### ✅ Option 4 — Free-tier fallback (any Claude account)
+
+Even without skill upload, you can use these manually:
+
+1. Open the skill folder (e.g. `skills/email-assistant/SKILL.md`)
+2. Copy everything **after** the `---` frontmatter block (just the body)
+3. Paste at the top of a new Claude conversation, then add your request below
+4. (Optional) Save as a Claude Project's custom instructions for one-click reuse
+
+---
+
+## 🧩 Skill format
+
+Every skill folder follows Claude's official structure:
+
+```
+skills/<skill-name>/
+├── SKILL.md      ← name + description in YAML frontmatter, instructions in markdown
+└── README.md     ← human-friendly docs (when to use, examples, tips)
+```
+
+A `SKILL.md` looks like this:
+
+```markdown
+---
+name: skill-name
+description: "What this skill does and when Claude should invoke it. This is what Claude reads to decide whether to use the skill."
+---
+
+# Instructions
+
+(The full skill behavior, output format, rules, and examples go here.)
+```
+
+The **`description`** field is critical — Claude uses it to decide *when* to invoke the skill. Each skill in this repo has a tightly-written description that triggers reliably on the right requests.
 
 ---
 
 ## 💡 Free-tier tips
 
-If you're on Claude's free plan, these skills stretch your messages further:
+If you're on Claude Free:
 
-- **Start with [Token Saver](./skills/token-saver/)** — compress your prompts before pasting them. 30-60% smaller is normal.
-- **Use [Smart Summarizer](./skills/smart-summarizer/)** before passing long text into another skill — fewer input tokens, faster responses.
-- **Build a single Project** with the skill you use most. You don't pay for re-pasting the system prompt every time.
-- **Pair skills:** Smart Summarizer → Decision Helper. Meeting Notes → Email Assistant (for follow-ups).
-
----
-
-## 🧩 How a skill is structured
-
-Every skill folder follows the same layout:
-
-```
-skills/<skill-name>/
-├── system_prompt.md   ← Paste this into Claude
-└── README.md          ← Description, examples, tips
-```
-
-The system prompt always includes:
-
-- **Role** — who Claude is acting as
-- **Job** — the specific task
-- **Output format** — exact structure of the response
-- **Rules** — what to never do, what to always do
-- **Examples** — to lock in the behavior
-
-This format works in Claude.ai, the Anthropic API, third-party clients (Cursor, Continue, Open WebUI), and most other LLM platforms with minor tweaks.
+- Start with [`token-saver`](./skills/token-saver/) — copy-paste it manually and use it to compress every long prompt before sending. 30-60% smaller is normal.
+- Pair [`smart-summarizer`](./skills/smart-summarizer/) with anything else — summarize first, analyze second.
+- Save your most-used skill as a **Claude Project's** custom instructions so you don't re-paste it on every chat.
+- **Best combos:** `smart-summarizer → decision-helper`, `meeting-notes-to-actions → email-assistant`.
 
 ---
 
 ## 🛠️ Built for real life
 
-This isn't a theoretical skill list. Every skill in this repo solves a problem you probably hit this week:
+This isn't a theoretical skill list. Every skill solves a problem you probably hit this week:
 
-- Got a long email thread? → **Smart Summarizer**
-- Stuck on a decision? → **Decision Helper**
-- Need to send a difficult email? → **Email Assistant**
-- Studying for something? → **Study Buddy**
-- Hit your free-plan limit? → **Token Saver**
+| Situation | Use this |
+|-----------|----------|
+| Got a long article you don't want to read | `smart-summarizer` |
+| Stuck on a decision | `decision-helper` |
+| Need to send a difficult email | `email-assistant` |
+| Studying for an exam or interview | `study-buddy` |
+| Hit your free-plan limit | `token-saver` |
+| Trying to understand legacy code | `code-explainer` |
+| Just wrote a blog post | `content-repurposer` |
+| Job hunting | `resume-tailor` |
+| Just finished a meeting | `meeting-notes-to-actions` |
+| Your prompts keep returning bad answers | `prompt-improver` |
 
 If a skill doesn't earn its place, it's not in this repo.
 
@@ -136,18 +145,15 @@ If a skill doesn't earn its place, it's not in this repo.
 
 ## 🤝 Contributing
 
-Contributions are welcome — but the bar is high. To add a new skill:
+Contributions welcome — bar is high. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the rules.
 
-1. Make sure it solves a **real, daily** problem not already covered
-2. Write the system prompt in the same structure as existing skills (Role / Job / Output format / Rules / Examples)
-3. Add a README in the skill's folder with: description, when to use, how to install, an example, tips, and what it won't do
+To add a new skill:
+
+1. Create `skills/<your-skill-name>/SKILL.md` with proper YAML frontmatter (`name`, `description`)
+2. Create `skills/<your-skill-name>/README.md` with human docs
+3. Build a zip: `cd skills/<your-skill-name> && zip ../../dist/<your-skill-name>.zip SKILL.md`
 4. Add it to the table in this README
 5. Open a PR with a 1-line summary of why it earned its slot
-
-**What we won't merge:**
-- Joke / novelty skills with no real use case
-- Skills that overlap heavily with existing ones
-- Skills that don't ship a clear output format
 
 ---
 
@@ -159,10 +165,12 @@ Contributions are welcome — but the bar is high. To add a new skill:
 
 ## ⭐ Like the repo?
 
-If a skill saved you time today, consider giving the repo a star — it helps others find it.
+If a skill saved you time today, give the repo a star — it helps others find it.
 
 <div align="center">
 
 **Built for people who use Claude every day.**
+
+[Skills](./skills/) · [Downloads](./dist/) · [Contributing](./CONTRIBUTING.md) · [License](./LICENSE)
 
 </div>

@@ -14,9 +14,20 @@ Reading other people's code is hard. Reading your own code from 6 months ago is 
 - Explaining code to a non-technical teammate
 
 ## How to install
-1. Copy `system_prompt.md` contents
-2. Paste into a Claude Project (handy for ongoing dev work)
-3. Drop your code in and (optionally) say which mode: **explain**, **debug**, or **improve**
+
+  This skill follows Claude's official **Agent Skills** format.
+
+  **Option A — Upload to Claude.ai (Pro/Team/Enterprise):**
+  1. Download [`SKILL.md`](./SKILL.md) (or grab the prebuilt zip from `dist/` in the repo root)
+  2. In Claude.ai → **Settings → Capabilities → Skills → Upload skill**
+  3. Select the file or folder. Done — Claude will use it automatically when relevant.
+
+  **Option B — Claude Code:**
+  Copy this folder into `~/.claude/skills/` (global) or your project's `.claude/skills/` directory.
+
+  **Option C — Free-tier fallback:**
+  Open `SKILL.md`, copy everything **after** the `---` frontmatter block, paste at the top of a new Claude conversation, then add your request below.
+
 
 ## The 3 modes
 

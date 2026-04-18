@@ -14,9 +14,20 @@ Most summaries are one flat block of text. This skill gives you a **layered summ
 - Substack essays you want the gist of
 
 ## How to install
-1. Copy `system_prompt.md` contents
-2. Use in a Claude Project (handy for ongoing reading)
-3. Paste the source content into the conversation
+
+  This skill follows Claude's official **Agent Skills** format.
+
+  **Option A — Upload to Claude.ai (Pro/Team/Enterprise):**
+  1. Download [`SKILL.md`](./SKILL.md) (or grab the prebuilt zip from `dist/` in the repo root)
+  2. In Claude.ai → **Settings → Capabilities → Skills → Upload skill**
+  3. Select the file or folder. Done — Claude will use it automatically when relevant.
+
+  **Option B — Claude Code:**
+  Copy this folder into `~/.claude/skills/` (global) or your project's `.claude/skills/` directory.
+
+  **Option C — Free-tier fallback:**
+  Open `SKILL.md`, copy everything **after** the `---` frontmatter block, paste at the top of a new Claude conversation, then add your request below.
+
 
 ## What it gives back
 Every summary has 4 tiers + a trust note:
